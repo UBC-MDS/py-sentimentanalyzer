@@ -21,7 +21,9 @@ $ pip install pysentimentanalyzer
 While there exists many packages and libraries for sentiment analysis and many projects built on top of those packages, we could not find specific packages that combines the use of sentiment analysis with visualizations. However, we expect there to be many projects
 done by individuals that likely perform similar functions by making use of existing NLP packages.
 Some Python packages that perform sentiment analysis include:
+  
     - [spaCy](https://spacy.io/)
+
     - [VADER](https://github.com/cjhutto/vaderSentiment)
 
 ## Contributing
