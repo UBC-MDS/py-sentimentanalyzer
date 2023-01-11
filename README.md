@@ -1,6 +1,11 @@
 # pysentimentanalyzer
 
-Perform sentiment analysis on text
+This package performs sentiment analysis on the given texts and summarizes information from the text.
+
+When a survey asks for written comments, it is often tedious to read through every response to extract useful information or just to get a quick summary.
+By using this package, responses can be quickly summarized to get a general idea of the sentiments of the comments, which can be useful such as when a PR
+team wants to know the overall sentiment on a company or when instructors want to know the overall sentiment on a course. The goal is to provide a quick
+and easy summary that is easily interpretable through the use of visualizations.
 
 ## Installation
 
@@ -18,7 +23,7 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`pysentimentanalyzer` was created by Eric Tsai. It is licensed under the terms of the MIT license.
+`pysentimentanalyzer` was created by Eric Tsai, Ranjit Sundaramurthi, Ranjit Sundaramurthi and Ziyi Chen. It is licensed under the terms of the MIT license.
 
 ## Credits
 
