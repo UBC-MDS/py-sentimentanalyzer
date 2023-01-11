@@ -4,8 +4,8 @@ This package performs sentiment analysis on the given texts and summarizes infor
 
 When a survey asks for written comments, it is often tedious to read through every response to extract useful information or just to get a quick summary.
 By using this package, responses can be quickly summarized to get a general idea of the sentiments of the comments, which can be useful such as when a PR
-team wants to know the overall sentiment on a company or when instructors want to know the overall sentiment on a course. The goal is to provide a quick
-and easy summary that is easily interpretable through the use of visualizations.
+team wants to know the overall sentiment on a company or when instructors want to know the overall sentiment on a course. The goal is to provide a quick 
+summary that is easily interpretable by combining results from a pre-trained Python natural language processing package with the use of visualizations.
 
 ## Installation
 
@@ -16,6 +16,13 @@ $ pip install pysentimentanalyzer
 ## Usage
 
 - TODO
+
+## Similar Packages
+While there exists many packages and libraries for sentiment analysis and many projects built on top of those packages, we could not find specific packages that combines the use of sentiment analysis with visualizations. However, we expect there to be many projects
+done by individuals that likely perform similar functions by making use of existing NLP packages.
+Some Python packages that perform sentiment analysis include:
+    - [spaCy](https://spacy.io/)
+    - [VADER](https://github.com/cjhutto/vaderSentiment)
 
 ## Contributing
 
