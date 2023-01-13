@@ -1,6 +1,6 @@
 def generate_wordcloud(df):
     """
-    Generate the word cloud from a given survey in the form of a 
+    Generate the word cloud of the most common positive and negative words from a given survey in the form of a 
     data frame and create a word cloud.
 
     Parameters
