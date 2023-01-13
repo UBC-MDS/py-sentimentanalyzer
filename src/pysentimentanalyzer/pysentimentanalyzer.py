@@ -1,21 +1,22 @@
-"""
-Generate the word cloud
+def generate_wordcloud(df):
+    """
+    Generate the word cloud from a given survey in the form of a 
+    data frame and create a word cloud.
 
-Parameters
-----------
-param_1 : <type>
-    <description of the parameter>
-param_2 : <type>
-    <description of the parameter>
+    Parameters
+    ----------
+    df : Pandas DataFrame
+        DataFrame containing the survey comments 
 
-Returns
--------
-<The type of the word cloud>
-    <descriptin of the word cloud> 
+    Returns
+    -------
+    WordCloud:
+        A word cloud instance that can be later plotted or saved as an image
 
-Examples
---------
->>> from pysentimentanalyzer ...
-"""
-def generate_wordcloud():
+    Examples
+    --------
+    >>> wc = generate_wordcloud(df)
+    >>> plt.imshow(wc, interpolation="bilinear")
+    >>> plt.show()
+    """
     pass
