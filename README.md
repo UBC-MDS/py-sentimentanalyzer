@@ -15,12 +15,19 @@ $ pip install pysentimentanalyzer
 
 ## Usage
 
-- TODO
+This package provides the following 4 functions:
+
+* `generate_wordcloud` - create a wordcloud of the most common positive and negative words
+* `sentiment_score` - calculates the overall sentiment of the input texts
+* `likert_scale` - converts the sentiment score to a likert scale ranging from 1-7
+* `plot_common_words` - creates a bar chart of words with the most positive and negative sentiment score
+
+In general, all functions will take a Pandas DataFrame of strings as an input.
 
 ## Similar Packages
-While there exists many packages and libraries for sentiment analysis and many projects built on top of those packages, we could not find specific packages that combines the use of sentiment analysis with visualizations. However, we expect there to be many projects
-done by individuals that likely perform similar functions by making use of existing NLP packages.
+While there exists many packages and libraries for sentiment analysis and many projects built on top of those packages, we could not find specific packages that combines the use of sentiment analysis with visualizations. However, we expect there to be many projects done by individuals that likely perform similar functions by making use of existing NLP packages. Our package aims enhance the existing NLP packages by providing a quick and simple way to generate summary visualizations.
 Some Python packages that perform sentiment analysis include:
+
 * [spaCy](https://spacy.io/)
 * [VADER](https://github.com/cjhutto/vaderSentiment)
 
@@ -30,7 +37,7 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`pysentimentanalyzer` was created by Eric Tsai, Ranjit Sundaramurthi, Ranjit Sundaramurthi and Ziyi Chen. It is licensed under the terms of the MIT license.
+`pysentimentanalyzer` was created by Eric Tsai, Ranjit Sundaramurthi, Tanmay Agarwal and Ziyi Chen. It is licensed under the terms of the MIT license.
 
 ## Credits
 
