@@ -3,6 +3,26 @@
 Contributions are welcome, and they are greatly appreciated! Every little bit
 helps, and credit will always be given.
 
+## Core Team Contribution
+
+All core team members should work on their feature branch. All contributions are expected to go through code review via a pull request (PR). A branch protection rule is set in the main branch (currently at least 1 reviewer is required). There shouldn't exist commits in the main branch, except the ones created when the team merged branches. 
+
+Team members should review the changes and approve the PR within 7 days.
+
+Team members should `git pull` to get the latest version of the project before making changes.
+
+General contribution steps:
+
+1. `git pull` to obtain the latest changes from the remote repository
+2. `git switch -c <branch_name>`, where branch_name is the name of the new feature branch
+3. Modify code & test the code
+4. `git add <related_files>`, add all the modified files
+5. `git commit -m "msg"`, commit changes with a **meaningful** commit message
+6. `git push --set-upstream origin <branch_name>`, pushing local changes with a new branch to the remote
+7. Submit a PR
+8. Other teammates should review the PR within 7 days, and approve the PR or add comments if necessary
+9. Merge branch
+
 ## Types of Contributions
 
 ### Report Bugs
