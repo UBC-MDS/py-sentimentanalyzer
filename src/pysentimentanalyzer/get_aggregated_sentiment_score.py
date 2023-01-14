@@ -1,4 +1,4 @@
-def aggregate_sentiment(df, col):
+def aggregate_sentiment_score(df, col):
     """
     Returns an aggregated compound score representing sentiment: 
     -1 (most extreme negative) and +1 (most extreme positive). The compound score
