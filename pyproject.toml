@@ -8,6 +8,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pandas = "^1.5.2"
+nltk = "^3.8.1"
 wordcloud = "^1.8.2.2"
 
 [tool.poetry.dev-dependencies]
