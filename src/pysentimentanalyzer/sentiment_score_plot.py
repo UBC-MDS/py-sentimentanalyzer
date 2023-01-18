@@ -22,7 +22,7 @@ def sentiment_score_plot(df):
 
     Examples
     --------
-    >>> plot = sentiment_score_plot(df, "reviews")
+    >>> plot = sentiment_score_plot(df)
     >>> plt.show()
     """
     
@@ -46,12 +46,6 @@ def sentiment_score_plot(df):
     plt.ylabel("Count")
     plt.xlabel("Sentiment Score range")
     plt.title("Distibution of Sentiments")
-    
-    # Uncheck below code if required to save plot to disk
-    # plt.savefig('test_hist.png')
-    # print("Plot saved to disk") 
-    # print("="*100)
-    # print("\n")
     
     # Histogram metrics
     max_counts = y.max()
