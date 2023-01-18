@@ -1,3 +1,4 @@
+import pandas as pd
 from get_aggregated_sentiment_score import get_aggregated_sentiment_score
 
 def convert_to_likert(df, col):
@@ -21,6 +22,10 @@ def convert_to_likert(df, col):
     --------
     >>> convert_to_likert(counts)
     """
+    if not isinstance(df, pd.DataFrame):
+        raise Exception("The first parameter should be a Pandas DataFrame.")
+    if not (col in list(df.columns)):
+        raise Exception("The column parameter should be a column in the DataFrame.")
     agg_score = get_aggregated_sentiment_score(df, col)
     if agg_score >= -1 and agg_score < -0.6:
         return "very negative", 1
