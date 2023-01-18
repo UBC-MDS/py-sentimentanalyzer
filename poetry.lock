@@ -187,8 +187,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "joblib"
 version = "1.2.0"
 description = "Lightweight pipelining with Python functions"
@@ -201,7 +199,6 @@ files = [
 ]
 
 [[package]]
->>>>>>> main
 name = "kiwisolver"
 version = "1.4.4"
 description = "A fast implementation of the Cassowary constraint solver"
@@ -342,8 +339,6 @@ pyparsing = ">=2.2.1"
 python-dateutil = ">=2.7"
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "nltk"
 version = "3.8.1"
 description = "Natural Language Toolkit"
@@ -370,7 +365,6 @@ tgrep = ["pyparsing"]
 twitter = ["twython"]
 
 [[package]]
->>>>>>> main
 name = "numpy"
 version = "1.24.1"
 description = "Fundamental package for array computing in Python"
@@ -421,8 +415,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "pandas"
 version = "1.5.2"
 description = "Powerful data structures for data analysis, time series, and statistics"
@@ -472,7 +464,6 @@ pytz = ">=2020.1"
 test = ["hypothesis (>=5.5.3)", "pytest (>=6.0)", "pytest-xdist (>=1.31)"]
 
 [[package]]
->>>>>>> main
 name = "pillow"
 version = "9.4.0"
 description = "Python Imaging Library (Fork)"
@@ -627,8 +618,6 @@ files = [
 six = ">=1.5"
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "pytz"
 version = "2022.7.1"
 description = "World timezone definitions, modern and historical"
@@ -739,7 +728,6 @@ files = [
 ]
 
 [[package]]
->>>>>>> main
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -764,8 +752,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "tqdm"
 version = "4.64.1"
 description = "Fast, Extensible Progress Meter"
@@ -787,7 +773,6 @@ slack = ["slack-sdk"]
 telegram = ["requests"]
 
 [[package]]
->>>>>>> main
 name = "wordcloud"
 version = "1.8.2.2"
 description = "A little word cloud generator"
@@ -853,8 +838,4 @@ pillow = "*"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-<<<<<<< HEAD
-content-hash = "ea8dbcef9f591b709b5e83991cc89ad06fb01214f83f895d8a56b3b69e9b299f"
-=======
-content-hash = "04de1972e40d58ee321ef960c46cf5011278c890f80fdd2e46b668c518ce79b3"
->>>>>>> main
+content-hash = "5c39c89233c5743d08f0daebb0f770ceb0aad8619b01db6f4931060d54000187"
