@@ -1,5 +1,5 @@
 import pandas as pd
-from get_aggregated_sentiment_score import get_aggregated_sentiment_score
+from get_aggregated_sentiment_score import aggregate_sentiment_score
 
 def convert_to_likert(df, col):
     """Convert the sentiment scores to a likert scale from 1-7
