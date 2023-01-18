@@ -1,4 +1,4 @@
-# from wordcloud import WordCloud
+from wordcloud import WordCloud
 from helper import get_sentiment_and_score
 
 def generate_wordcloud(df, col):
