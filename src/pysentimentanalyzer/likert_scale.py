@@ -1,5 +1,5 @@
 import pandas as pd
-from get_aggregated_sentiment_score import aggregate_sentiment_score
+from pysentimentanalyzer.get_aggregated_sentiment_score import aggregate_sentiment_score
 
 def convert_to_likert(df, col):
     """Convert the sentiment scores to a likert scale from 1-7
@@ -26,7 +26,7 @@ def convert_to_likert(df, col):
         raise Exception("The first parameter should be a Pandas DataFrame.")
     if not (col in list(df.columns)):
         raise Exception("The column parameter should be a column in the DataFrame.")
-    agg_score = get_aggregated_sentiment_score(df, col)
+    agg_score = aggregate_sentiment_score(df, col)
     if agg_score >= -1 and agg_score < -0.6:
         return "very negative", 1
     elif agg_score >= -0.6 and agg_score < -0.2:
