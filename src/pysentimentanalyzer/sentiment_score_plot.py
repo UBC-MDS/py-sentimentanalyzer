@@ -17,7 +17,7 @@ def sentiment_score_plot(df, col):
     df : Pandas DataFrame
         DataFrame containing the reviews
     col: String
-        Name of the column that contains th reviews
+        Name of the column that contains the reviews
 
     Returns
     -------
@@ -30,13 +30,20 @@ def sentiment_score_plot(df, col):
     >>> plt.show()
     """
 
-    # Call the helper function to compute the sentiment and score
-    data = get_sentiment_and_score(df, col)
+    # Check that the first input is dataframe
+    if not isinstance(df, pd.DataFrame):
+        raise TypeError("The first parameter should be Pandas Dataframe.")
+
+    # Check that the second input is a string
+    if not isinstance(col, str):
+        raise TypeError("The second parameter should be string dtype")
 
     # Check that the column exists in dataframe
-    assert (
-        "compound_score" in df.columns
-    ), "Specified column does not exist in dataframe"
+    if not (col in list(df.columns)):
+        raise Exception("The second parameter is not a column in the dataframe")
+
+    # Call the helper function to compute the sentiment and score
+    data = get_sentiment_and_score(df, col)
 
     # Plot the figure
     fig_size = (7, 5)

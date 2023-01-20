@@ -16,13 +16,20 @@ def test_function_returns_figure():
 
 
 def test_function_input_dataframe():
-    """Assert function first input is dataframe"""
-    df = pd.read_csv("test_tweets.csv")
-    assert isinstance(df, pd.DataFrame), "first input should be type dataframe"
+    """Assert not passing first input as dataframe to function"""
+    with pytest.raises(TypeError):
+        sentiment_score_plot("not a dataframe", "column")
 
 
 def test_function_input_column():
-    """Assert function second input is a string"""
+    """Assert not passing second input as a string to function"""
     df = pd.read_csv("test_tweets.csv")
-    col = "text"
-    assert isinstance(col, str), "column name should be string dtype"
+    with pytest.raises(TypeError):
+        sentiment_score_plot(df, 45)
+
+
+def test_function_column_missing():
+    """Assert passed column to function does not exist"""
+    df = pd.read_csv("test_tweets.csv")
+    with pytest.raises("Exception"):
+        sentiment_score_plot(df, "non existent column")
