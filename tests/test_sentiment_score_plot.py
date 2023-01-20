@@ -31,5 +31,5 @@ def test_function_input_column():
 def test_function_column_missing():
     """Assert passed column to function does not exist"""
     df = pd.read_csv("test_tweets.csv")
-    with pytest.raises("Exception"):
+    with pytest.raises(Exception):
         sentiment_score_plot(df, "non existent column")
