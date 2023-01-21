@@ -9,7 +9,9 @@ def generate_wordcloud(df, col):
     Parameters
     ----------
     df : Pandas DataFrame
-        DataFrame containing the survey comments 
+        DataFrame containing the survey comments
+    col : string
+        Name of the column of text in the Dataframe
 
     Returns
     -------
@@ -19,7 +21,7 @@ def generate_wordcloud(df, col):
 
     Examples
     --------
-     >>> imgs= generate_wordcloud(df)
+     >>> imgs= generate_wordcloud(df, col)
      >>> imgs[0].show() # positive
      >>> imgs[1].show() # negative
      >>> imgs[2].show() # neutral
