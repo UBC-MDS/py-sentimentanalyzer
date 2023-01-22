@@ -14,7 +14,7 @@ def test_convert_to_likert():
     description, value = convert_to_likert(df, "text")
     assert isinstance(description, str), "The first value returned should be a string."
     assert isinstance(value, int), "The second value returned should be an integer."
-    assert int in [1, 2, 3, 4, 5], "The likert scale value should be either 1, 2, 3, 4 or 5."
+    assert value in [1, 2, 3, 4, 5], "The likert scale value should be either 1, 2, 3, 4 or 5."
 
 def test_convert_to_likert_no_df():
     """Assert not passing in a DataFrame in the first parameter raises an exception"""

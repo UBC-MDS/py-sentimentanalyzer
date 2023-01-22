@@ -1,3 +1,4 @@
+import pandas as pd
 from wordcloud import WordCloud
 from pysentimentanalyzer.helper import get_sentiment_and_score
 

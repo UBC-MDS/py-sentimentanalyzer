@@ -16,7 +16,8 @@ def test_wordcloud_none_df():
 
 def test_wordcloud_none_col():
     """Assert not a None col"""
-    df = pd.read_csv("test_tweets.csv")
+    df = pd.read_csv("tests/test_tweets.csv")
+    df = df.head(200)
     with pytest.raises(TypeError):
         generate_wordcloud(df, None)
     
