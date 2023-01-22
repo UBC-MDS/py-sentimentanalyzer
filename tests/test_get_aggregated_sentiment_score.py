@@ -1,5 +1,6 @@
-from pysentimentanalyzer.get_aggregated_sentiment_score import aggregate_sentiment_score
+import pytest
 import pandas as pd
+from pysentimentanalyzer.get_aggregated_sentiment_score import aggregate_sentiment_score
 
 sample_text = [
     "He is so fun and entertaining.",

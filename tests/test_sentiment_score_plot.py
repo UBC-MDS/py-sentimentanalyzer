@@ -2,12 +2,15 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
+import pytest
 from pysentimentanalyzer import sentiment_score_plot
 
+df = pd.read_csv("tests/test_tweets.csv")
+df = df.head(200)
 
 def test_function_returns_figure():
     """Assert function returns a matplotlob object"""
-    df = pd.read_csv("test_tweets.csv")
+    # df = pd.read_csv("tests/test_tweets.csv")
     col = "text"
     plot = sentiment_score_plot.sentiment_score_plot(df, col)
     assert isinstance(
@@ -23,13 +26,13 @@ def test_function_input_dataframe():
 
 def test_function_input_column():
     """Assert not passing second input as a string to function"""
-    df = pd.read_csv("test_tweets.csv")
+    # df = pd.read_csv("tests/test_tweets.csv")
     with pytest.raises(TypeError):
         sentiment_score_plot(df, 45)
 
 
 def test_function_column_missing():
     """Assert passed column to function does not exist"""
-    df = pd.read_csv("test_tweets.csv")
+    # df = pd.read_csv("tests/test_tweets.csv")
     with pytest.raises(Exception):
         sentiment_score_plot(df, "non existent column")

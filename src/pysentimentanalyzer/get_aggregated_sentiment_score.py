@@ -1,5 +1,5 @@
 import pandas as pd
-from helper import get_sentiment_and_score
+from pysentimentanalyzer.helper import get_sentiment_and_score
 
 def aggregate_sentiment_score(df, col):
     """
