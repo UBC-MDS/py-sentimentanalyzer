@@ -10,12 +10,12 @@ def get_compound_score(text):
     Calculates a compound sentiment score from text
 
     Parameters:
-    ------
+    -----------
     text: str
         Input text data as string
     
     Returns:
-    ------
+    --------
     A numeric sentiment score of the text : (float)
     """
     sid = SentimentIntensityAnalyzer()
@@ -27,12 +27,12 @@ def get_sentiment(text):
     Evaluates the type of sentiment from a given text
 
     Parameters:
-    ------
+    -----------
     text: str
         Input text data as string
     
     Returns:
-    ------
+    --------
     The type of sentiment (positive, negetive or neutral) as a string : (str)
     """
     score = get_compound_score(text)
@@ -47,13 +47,14 @@ def get_sentiment_and_score(df, col):
     Calculates a compound sentiment score from text
 
     Parameters:
-    ------
+    -----------
     df: pd.DataFrame
         A DataFrame
-    col: The column name of the text column on which sentiment analysis is done
+    col: 
+        The column name of the text column on which sentiment analysis is done
     
     Returns:
-    ------
+    --------
     A Pandas DataFrame with numeric sentiment and its corresponding sentiment type 
     added to the DataFrame : (pd.DataFrame)
     """
