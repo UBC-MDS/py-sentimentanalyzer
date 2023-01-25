@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.0 (2023-01-25)
+### Feature
+* Add sentiment score plotting function docstring ([`4b1b556`](https://github.com/UBC-MDS/py-sentimentanalyzer/commit/4b1b55695ad00b066c10fef59c58a1e365d465bf))
+
 ## v0.1.0 (10/01/2023)
 
 - First release of `pysentimentanalyzer`!
