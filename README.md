@@ -18,11 +18,44 @@ pip install pysentimentanalyzer
 This package provides the following 4 functions:
 
 * `generate_wordcloud` - Create a wordcloud of the most common positive and negative words.
-* `get_aggregated_sentiment_score` - Calculates the overall sentiment score of the input texts.
-* `likert_scale` - Converts the sentiment score to a likert scale ranging from 1-7.
+* `aggregate_sentiment_score` - Calculates the overall sentiment score of the input texts.
+* `convert_to_likert` - Converts the sentiment score to a likert scale ranging from 1-5.
 * `sentiment_score_plot` - Creates a binned histogram showing count of reviews against the sentiment score.
 
-In general, all functions will take a Pandas DataFrame of strings as an input.
+All functions take a Pandas DataFrame and string of the column name containing the texts as arguments.
+
+See below for an example of how to use the package.
+
+```
+import pandas as pd
+from pysentimentanalyzer.generate_wordcloud import *
+from pysentimentanalyzer.get_aggregated_sentiment_score import *
+from pysentimentanalyzer.likert_scale import *
+from pysentimentanalyzer.sentiment_score_plot import *
+
+df = pd.read_csv("test_tweets.csv") # assuming the csv exists in the current directory
+df = df.head(200)       
+```
+
+```
+get_aggregated_sentiment_score(df, "text")
+>>> -0.143
+```
+
+```
+convert_to_likert(df, "text")
+>>> ('neutral', 3)
+```
+
+```
+sentiment_score_plot(df, "text")
+```
+![histogram](img/histogram_output.png)
+
+```
+generate_wordcloud(df, "text")
+```
+![wordcloud](img/wordcloud_output.png)
 
 ## Similar Packages
 
