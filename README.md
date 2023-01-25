@@ -53,7 +53,8 @@ sentiment_score_plot(df, "text")
 ![histogram](img/histogram_output.png)
 
 ```
-generate_wordcloud(df, "text")
+wordcloud_list = generate_wordcloud(df, "text")
+wordcloud_list[0]
 ```
 ![wordcloud](img/wordcloud_output.png)
 
