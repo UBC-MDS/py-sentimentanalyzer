@@ -38,7 +38,7 @@ df = df.head(200)
 ```
 
 ```
-get_aggregated_sentiment_score(df, "text")
+aggregate_sentiment_score(df, "text")
 >>> -0.143
 ```
 
