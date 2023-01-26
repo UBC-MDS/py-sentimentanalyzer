@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pysentimentanalyzer"
-version = "0.2.0"
+version = "0.2.1"
 description = "Perform sentiment analysis on text"
 authors = ["Eric Tsai"]
 license = "MIT"

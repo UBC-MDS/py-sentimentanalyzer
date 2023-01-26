@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-01-26)
+
+
 ## v0.2.0 (2023-01-26)
 ### Feature
 * Implemented example usage in README ([`4e3a95a`](https://github.com/UBC-MDS/py-sentimentanalyzer/commit/4e3a95aab069eef341708aa11e3206e8505805b0))
