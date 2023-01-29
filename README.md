@@ -1,4 +1,6 @@
-# pysentimentanalyzer
+# pysentimentanalyzer [![codecov](https://codecov.io/gh/UBC-MDS/py-sentimentanalyzer/branch/main/graph/badge.svg?token=OwGoN7xkT8)](https://codecov.io/gh/UBC-MDS/py-sentimentanalyzer) [![Documentation Status](https://readthedocs.org/projects/py-sentimentanalyzer/badge/?version=latest)](https://py-sentimentanalyzer.readthedocs.io/en/latest/?badge=latest)
+
+
 
 This package performs sentiment analysis on the given texts and summarizes information from the text.
 
