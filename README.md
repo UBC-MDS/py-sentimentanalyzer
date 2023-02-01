@@ -11,6 +11,8 @@ summary that is easily interpretable by combining results from a pre-trained Pyt
 
 ## Installation
 
+Ensure that your python version is <=3.9.
+To install the package, run the following.
 ```bash
 pip install pysentimentanalyzer
 ```
