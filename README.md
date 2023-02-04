@@ -1,4 +1,6 @@
-# pysentimentanalyzer [![codecov](https://codecov.io/gh/UBC-MDS/py-sentimentanalyzer/branch/main/graph/badge.svg?token=OwGoN7xkT8)](https://codecov.io/gh/UBC-MDS/py-sentimentanalyzer) [![Documentation Status](https://readthedocs.org/projects/py-sentimentanalyzer/badge/?version=latest)](https://py-sentimentanalyzer.readthedocs.io/en/latest/?badge=latest)
+# pysentimentanalyzer 
+[![ci-cd](https://github.com/UBC-MDS/py-sentimentanalyzer/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/py-sentimentanalyzer/actions/workflows/ci-cd.yml)
+[![codecov](https://codecov.io/gh/UBC-MDS/py-sentimentanalyzer/branch/main/graph/badge.svg?token=OwGoN7xkT8)](https://codecov.io/gh/UBC-MDS/py-sentimentanalyzer) [![Documentation Status](https://readthedocs.org/projects/py-sentimentanalyzer/badge/?version=latest)](https://py-sentimentanalyzer.readthedocs.io/en/latest/?badge=latest)
 
 
 
