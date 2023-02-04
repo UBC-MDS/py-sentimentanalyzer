@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-02-04)
+### Feature
+* Added ci/cd badge ([`7f0ec3e`](https://github.com/UBC-MDS/py-sentimentanalyzer/commit/7f0ec3e7646ea4ec83243eab606a93b0a71b795d))
+
+### Breaking
+* official release ([`7f0ec3e`](https://github.com/UBC-MDS/py-sentimentanalyzer/commit/7f0ec3e7646ea4ec83243eab606a93b0a71b795d))
+
 ## v0.2.4 (2023-02-01)
 
 
